@@ -10,43 +10,58 @@ The keyboard features three simple buttons that input "hello", "world", and "key
 
 These instructions will guide you through forking the project, making it your own, and setting up a development environment for testing and further development.
 
+### Learn with ChatGPT
+Use this custom GPT trained on this repo to learn more about the project and how to make your own keyboard!
+
+<a href="https://chat.openai.com/g/g-i1y7EpBXV-helloworldkeyboard">
+    <img src="./images/logo.png" style="height:30px">Chat with HelloWorldKeyboard GPT
+</a>
+
 ### Prerequisites
 
 Before you start, ensure you have Android Studio installed, the official IDE for Android app development:
 
 - [Install Android Studio](https://developer.android.com/studio/install)
 
-### Forking and Cloning the Project
+### Setting Up Your Project from a Public Template
 
-1. **Fork the Repository**:
-    - Visit the original repository at `https://github.com/modularizer/helloworldkeyboard`.
-    - Click on the `Fork` button at the top right corner of the page to create a copy of the repository in your GitHub account.
+1. **Create Your Own Copy of the Repository**:
+    - Navigate to the HelloWorldKeyboard project at `https://github.com/modularizer/helloworldkeyboard`.
+    - Locate the `Use this template` button near the top of the page and click on it to generate a new repository in your GitHub account using HelloWorldKeyboard as a template.
 
-2. **Clone Your Fork**:
-    - After forking, go to your GitHub account where the new repository exists.
-    - Open the forked repository and click on `Code` to get the clone URL.
-    - Copy the URL.
+2. **Set Up Your New Repository**:
+    - Go to your GitHub profile to find the newly created repository.
+    - Open this repository, and click on `Code` to reveal the clone options.
+    - Copy the provided URL for cloning.
 
-3. **Import the Project in Android Studio**:
-    - Open Android Studio.
-    - Go to `File` > `New` > `Project from Version Control`.
-    - In the URL field, paste the URL of your forked repository.
-    - Choose your preferred directory and click `Clone`.
+3. **Import the Project into Android Studio**:
+    - Launch Android Studio.
+    - Select `File` > `New` > `Project from Version Control`.
+    - In the dialog box, enter the URL of your newly created repository in the URL field.
+    - Choose a local directory where you want the project to be saved and click `Clone`.
 
-### Running and Testing the Project
+### Running and Testing the Project in Android Studio for Beginners
 
-1. **Set Up an Emulator**:
-    - Go to Tools > Device Manager > Create Device to create a new Virtual Device.
-    - Choose a device definition and a system image.
+1. **Setting Up an Emulator for Testing**:
+   - Open Android Studio and navigate to `Tools` > `Device Manager`.
+   - Click on `Create Device` to set up a new Android Virtual Device (AVD).
+   - Select a device definition that resembles a common phone (e.g., Pixel 4) and choose a system image (preferably the latest available version of Android).
+   - Follow the prompts to create the emulator. Once created, it will appear in your list of available devices.
 
-2. **Run the App**:
-    - With the emulator open, run the app from Android Studio.
+2. **Configuring to Run the HelloWorldKeyboard Service**:
+In Android Studio, go to `Run` > `Edit Configurations...` and set the `Launch Options` to `Nothing` and the `Launch` dropdown to `Nothing`. 
+This is because unlike other apps, there is no "app" to launch for a keyboard, it is simply enabled in the system settings and activated when a text field is selected.
 
-3. **Enable and Test the Keyboard**:
-    - In the emulator, navigate to `Settings` (hint: double-tap the top bar, swipe down, find the gear icon)
-    - In Settings, search `Manage on-screen Keyboards` or navigate to `Settings` > `System` > `Languages & input` > `On-screen keyboard` > `Manage on-screen keyboards`.
-    - Enable `Hello World Keyboard`.
-    - Open any text field, and in the bottom right corner of the screen, tap the keyboard icon to switch to your new keyboard.
+3. **Enabling and Testing the HelloWorldKeyboard**:
+   - Start your emulator by selecting it in the AVD Manager and clicking on the green play button.
+     - **NOTE:** Because it is a service, no app will be launched when you run the project. Instead, the keyboard will be enabled in the system settings.
+   - Once the emulator is running, open the `Settings` app (you can find it by swiping up on the home screen and searching for 'Settings').
+   - Navigate to `System` > `Languages & input` > `On-screen keyboard` > `Manage on-screen keyboards`.
+   - Toggle on the `Hello World Keyboard`.
+   - To test, open any app that allows you to type text. Click on a text field to bring up the keyboard.
+   - If the default keyboard appears, switch to the HelloWorldKeyboard by tapping on the keyboard icon in the navigation bar and selecting 'Hello World Keyboard'.
+
+**Note:** It's helpful to keep the README open as you go through these steps. If you encounter any difficulties, refer back to the detailed instructions provided.
 
 ![Setup Gif](./images/setup.gif)
 
