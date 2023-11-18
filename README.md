@@ -4,7 +4,7 @@ Welcome to the Hello World Keyboard project!
 This custom Android keyboard is a perfect starting point for first-time Android developers interested in exploring custom keyboard development. 
 The keyboard features three simple buttons that input "hello", "world", and "keyboard".
 
-![Keyboard Gif](./images/use.gif)
+<img src="./images/use.gif" height="300"/>
 
 ## Getting Started
 
@@ -63,7 +63,7 @@ This is because unlike other apps, there is no "app" to launch for a keyboard, i
 
 **Note:** It's helpful to keep the README open as you go through these steps. If you encounter any difficulties, refer back to the detailed instructions provided.
 
-![Setup Gif](./images/setup.gif)
+<img src="./images/setup.gif" height="300"/>
 
 ## Customizing Your Keyboard
 ### Key Files for Customization
